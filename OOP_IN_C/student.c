@@ -11,15 +11,14 @@
  * Structure used as class
  */
 
-class  student{
+typedef class student{
     int rollno;
     char name[100];
     float percentage;
     
     void (*setValuesPtr)(class student *,int, char *, float);
     void (*printValuesPtr)(class student *);
-};
-typedef class student student;
+}student;
 
 
 /*
@@ -48,7 +47,7 @@ void printValues(student *this) {
 
     fprintf(stdout,"Roll no:- %d\n",this->rollno);
     fprintf(stdout,"Name:- %s\n",this->name);
-    fprintf(stdout,"Percentage:- %f\n",this->percentage);
+    fprintf(stdout,"Percentage:- %f\n\n",this->percentage);
 }
 
 
